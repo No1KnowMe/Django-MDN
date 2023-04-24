@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-yd1@6bl7vy#gxu
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['web-production-0c9a.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -142,3 +142,5 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Simplified static file serving.
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-0c9a.up.railway.app']
