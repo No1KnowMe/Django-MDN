@@ -31,7 +31,6 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['web-production-0c9a.up.railway.app', '127.0.0.1']
 
-
 # Application definition
 
 INSTALLED_APPS = [
